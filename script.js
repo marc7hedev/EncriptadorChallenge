@@ -66,7 +66,10 @@ function showCopyButton(){
     copyButton.style.display = "block";
 }
 
-
+function copyToClipboard(){
+    const result = document.getElementById("resultContainer").textContent;
+    navigator.clipboard.writeText(result);
+}
 
 
 
