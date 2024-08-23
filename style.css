@@ -234,3 +234,17 @@ footer{
 
 }
 
+.enter-text{
+    width: 336px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--notice-color);
+}
+
+#outputContainer{
+    margin: auto;
+}
