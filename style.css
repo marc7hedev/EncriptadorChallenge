@@ -10,7 +10,7 @@
     --notice-color: #495057;
     --shadow-color: #rgba(0,0,0, 0.08);
     --font-family: 'Montserrat', sans-serif;
-    --h1-font-size: 1.2rem;
+    --h1-font-size: 2rem;
     --h2-font-size: 24px;
     --text-font-size: 32px;
     --button-font-size: 16px;
@@ -32,10 +32,9 @@ body{
 }
 
 h1{
-    color: var(--tertiary-color);
+    color: var(--primary-color);
     margin-top: 20px;
     margin-left: 30px;
-    text-shadow: 3px 3px 3px #0f0963;
     font-size: var(--h1-font-size);
 }
 
@@ -51,10 +50,18 @@ h2{
 }
 
 header{
-    display: block;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
     height: 12vh;
     margin-bottom: 10px;
     overflow: hidden;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 footer{
@@ -97,7 +104,7 @@ footer{
     background-color: var(--background-color);
     font-style: normal;
     font-weight: 400;
-    font-size: normal;
+    font-size: var(--h2-font-size);
     line-height: 150%;
     color: var(--primary-color);
     border: none;
@@ -190,11 +197,11 @@ footer{
 
 .encrypt-button:hover,
 .copy-button:hover{
-    box-shadow: 0 0 10px rgba(10, 56, 113, 0.5);
+    box-shadow: 0 0 20px rgba(10, 56, 113, 0.5);
 }
 
 .decrypt-button:hover{
-    box-shadow: 0 0 10px rgba(216, 223, 232, 0.7);
+    box-shadow: 0 0 20px rgba(10, 56, 113, 0.5);
 }
 
 .output-section{
@@ -206,9 +213,12 @@ footer{
     min-height: 300px;
     height: 640px;
     background: var(--tertiary-color);
-    box-shadow: 0px 24px 32px -8px var(--shadow-color);
+    box-shadow: 0 0 20px rgba(10, 56, 113, 0.3);
     border-radius: 32px;
     margin-left: 20px;
+}
+.output-section:hover{
+    box-shadow: 0 0 30px rgba(10, 56, 113, 0.3);
 }
 
 @media (max-width: 768px){
