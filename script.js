@@ -1,6 +1,6 @@
-
-function encryptText(inputText){
-    if(/[^a-z\s]/s.test(inputText) || inputText === ''){
+function encryptText(inputText) {
+    console.log("Input text before validation: ", inputText);
+    if (!/^[a-z\s]+$/.test(inputText) || inputText.trim() === '') {
         showErrorAlert();
         return;
     }
@@ -16,8 +16,9 @@ function encryptText(inputText){
     return inputText.replace(/[aeiou]/g, match => conversions[match]);
 }
 
-function decryptText(inputText){
-    if(/[^a-z\s]/.test(inputText) || inputText === ''){
+function decryptText(inputText) {
+    console.log("Input text before validation: ", inputText);
+    if (!/^[a-z\s]+$/.test(inputText) || inputText.trim() === '') {
         showErrorAlert();
         return;
     }
@@ -28,10 +29,9 @@ function decryptText(inputText){
         ["imes", "i"],
         ["ober", "o"],
         ["ufat", "u"],
-
     ];
 
-    for (let [search, replace] of conversions){
+    for (let [search, replace] of conversions) {
         const regex = new RegExp(search, "g");
         inputText = inputText.replace(regex, replace);
     }
@@ -40,36 +40,41 @@ function decryptText(inputText){
 
 function handleEncryption(event) {
     event.preventDefault();
-    const inputText = document.getElementById("textInput").value;
+    const inputText = document.getElementById("inputText").value.trim();
     const result = encryptText(inputText);
-    document.getElementById("resultContainer").textContent = result;
-    showCopyButton();
+    if (result) { 
+        showResult(result);
+    }
 }
 
 function handleDecryption(event) {
     event.preventDefault();
-    const inputText = document.getElementById("textInput").value;
+    const inputText = document.getElementById("inputText").value.trim();
     const result = decryptText(inputText);
-    document.getElementById("resultContainer").textContent = result;
+    if (result) { 
+        showResult(result);
+    }
+}
+
+function showResult(result) {
+    const outputContainer = document.getElementById("outputContainer");
+    outputContainer.innerHTML = `<p>${result}</p>`;
     showCopyButton();
 }
 
-function showErrorAlert(){
+function showErrorAlert() {
     alert("El texto tiene caracteres no permitidos... \n" +
         "Únicamente se pueden introducir letras minúsculas... \n" +
         "No se permiten mayúsculas, acentos, números y otros caracteres..."
-        );
+    );
 }
 
-function showCopyButton(){
+function showCopyButton() {
     const copyButton = document.getElementById("copyButton");
     copyButton.style.display = "block";
 }
 
-function copyToClipboard(){
-    const result = document.getElementById("resultContainer").textContent;
+function copyToClipboard() {
+    const result = document.getElementById("outputContainer").textContent;
     navigator.clipboard.writeText(result);
 }
-
-
-
