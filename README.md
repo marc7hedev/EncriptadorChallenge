@@ -33,22 +33,3 @@ Puedes probar la aplicación en vivo aquí: [EncriptadorChallenge](https://marc7
    git clone https://github.com/marc7hedev/EncriptadorChallenge.git
    ```
 2. Abre el archivo `index.html` en tu navegador para empezar a usar la aplicación.
-
-## 📋 Uso
-
-1. Ingresa el texto en el campo proporcionado.
-2. Elige si deseas encriptar o desencriptar el texto.
-3. Presiona el botón correspondiente para obtener el resultado.
-4. Utiliza el botón de copiar para guardar el resultado en el portapapeles.
-
-## 💬 Contribuciones
-
-¡Las contribuciones son bienvenidas! Si encuentras algún error o deseas agregar nuevas funcionalidades, no dudes en abrir un **issue** o enviar un **pull request**.
-
-## 📝 Licencia
-
-Este proyecto está licenciado bajo la [MIT License](LICENSE).
-
----
-
-¡Espero que te guste! Si necesitas algún cambio o ajuste, házmelo saber.
