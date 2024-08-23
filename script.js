@@ -38,3 +38,20 @@ function decryptText(inputText){
     return inputText;
 }
 
+function handleEncryption(event) {
+    event.preventDefault();
+    const inputText = document.getElementById("textInput").value;
+    const result = encryptText(inputText);
+    document.getElementById("resultContainer").textContent = result;
+    showCopyButton();
+}
+
+function handleDecryption(event) {
+    event.preventDefault();
+    const inputText = document.getElementById("textInput").value;
+    const result = decryptText(inputText);
+    document.getElementById("resultContainer").textContent = result;
+    showCopyButton();
+}
+
+
