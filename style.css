@@ -17,3 +17,16 @@
     --notice-font-size: 12px;
 
 }
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    margin: 0;
+    height: 100vh;
+    /* -ms-overflow-style: none; */
+    /* scrollbar-width: none; */
+}
