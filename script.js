@@ -54,4 +54,19 @@ function handleDecryption(event) {
     showCopyButton();
 }
 
+function showErrorAlert(){
+    alert("El texto tiene caracteres no permitidos... \n" +
+        "Únicamente se pueden introducir letras minúsculas... \n" +
+        "No se permiten mayúsculas, acentos, números y otros caracteres..."
+        );
+}
+
+function showCopyButton(){
+    const copyButton = document.getElementById("copyButton");
+    copyButton.style.display = "block";
+}
+
+
+
+
 
