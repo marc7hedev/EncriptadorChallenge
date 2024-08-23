@@ -108,3 +108,105 @@ footer{
 .text-input::placeholder{
     color: var(--primary-color);
 }
+
+.buttons-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.encrypt-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: var(--primary-color);
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--button-font-size);
+    line-height: 19px;
+    text-align: center;
+    color: var(--tertiary-color);
+    font-family: inherit;
+}
+
+.notice{
+    height: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--notice-font-size);
+    line-height: 150%;
+    color: var(--notice-color);
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.decrypt-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--button-font-size);
+    line-height: 19px;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: inherit;
+}
+
+.copy-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 8px;
+    width: 150px;
+    height: 67px;
+    background: var(--primary-color);
+    border-radius: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--button-font-size);
+    line-height: 19px;
+    text-align: center;
+    color: var(--tertiary-color);
+    font-family: inherit;
+}
+
+.encrypt-button:hover,
+.copy-button:hover{
+    box-shadow: 0 0 10px rgba(10, 56, 113, 0.5);
+}
+
+.decrypt-button:hover{
+    box-shadow: 0 0 10px rgba(216, 223, 232, 0.7);
+}
+
+.output-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    min-height: 300px;
+    height: 640px;
+    background: var(--tertiary-color);
+    box-shadow: 0px 24px 32px -8px var(--shadow-color);
+    border-radius: 32px;
+    margin-left: 20px;
+}
