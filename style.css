@@ -68,3 +68,43 @@ footer{
     margin: auto;
     text-align: center;
 }
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    flex-direction: row;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+}
+
+.text-input,
+.text-input:active{
+    position: relative;
+    font-family: inherit;
+    width: 100%;
+    height: calc(90vh - 150px);
+    resize: none;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: normal;
+    line-height: 150%;
+    color: var(--primary-color);
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+.text-input::placeholder{
+    color: var(--primary-color);
+}
