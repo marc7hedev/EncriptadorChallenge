@@ -1,5 +1,3 @@
-Aquí tienes un `README.md` sencillo pero atractivo para tu repositorio:
-
 ---
 
 # Encriptador / Desencriptador de Texto
