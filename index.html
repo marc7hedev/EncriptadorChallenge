@@ -10,12 +10,27 @@
 <body>
 
     <header>
-        <div class="encabezado">
+        <div class="header-container">
             <h1>Encriptador de texto</h1>
         </div>
     </header>
 
-    
+
+    <main class="main-content">
+        <section class="input-section">
+            <form id="encryptForm">
+                <textarea class="text-input" id="inputText" placeholder="Ingresar texto aquí"></textarea>
+                <p class="notice">Solo letras minúsculas sin acento</p>
+                <div class="buttons-container">
+                    <button class="encrypt-button" type="submit" onclick="encryptText(event)">Encriptar</button>
+                    <button class="decrypt-button" type="button" onclick="decryptText(event)">Desencriptar</button>
+                </div>
+            </form>
+        </section>
+        
+    </main>
+
+
     
 </body>
 </html>
