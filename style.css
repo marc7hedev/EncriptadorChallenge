@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Definiendo variables */
+:root{
+    --primary-color: #0A3871;
+    --secondary-color-color: #D8DFE8;
+    --tertiary-color: #FFFFFF;
+    --background-color: #F3F5FC;
+    --text-color: #343A40;
+    --notice-color: #495057;
+    --shadow-color: #rgba(0,0,0, 0.08);
+    --font-family: 'Montserrat', sans-serif;
+    --h1-font-size: 1.2rem;
+    --h2-font-size: 24px;
+    --text-font-size: 32px;
+    --button-font-size: 16px;
+    --notice-font-size: 12px;
+
+}
