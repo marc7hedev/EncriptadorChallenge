@@ -30,3 +30,41 @@ body{
     /* -ms-overflow-style: none; */
     /* scrollbar-width: none; */
 }
+
+h1{
+    color: var(--tertiary-color);
+    margin-top: 20px;
+    margin-left: 30px;
+    text-shadow: 3px 3px 3px #0f0963;
+    font-size: var(--h1-font-size);
+}
+
+h2{
+    width: 336px;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--h2-font-size);
+    line-height: 120%;
+    text-align: center;
+    color: var(--text-color);
+}
+
+header{
+    display: block;
+    height: 12vh;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+footer{
+    display: block;
+    margin-bottom: 50px;
+}
+
+.footer-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    text-align: center;
+}
