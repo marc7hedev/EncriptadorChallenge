@@ -1,4 +1,3 @@
----
 
 # Encriptador / Desencriptador de Texto
 
